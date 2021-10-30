@@ -7,11 +7,11 @@ body {
 	font-family: 'Oswald', sans-serif;
 }
 /* =======header======== */
-header {
+/* header {
 	height: 100vh;
 	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.99)),
 		url("../images/back.jpg")no-repeat center center/cover;
-}
+} */
 header .logo {
     width: 60px;
     height: 60px;
@@ -84,12 +84,23 @@ nav {
 	}
 }
 .banner {
-	position: absolute;
-	top: 50%;
-	left: 50;
+	position: static;
+	height: 250px;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.99)),
+	url("../images/back.jpg")no-repeat center center/cover;
+}
+.banner-cont {
+	
+	position: relative; 
+	top: 80px;
+	left: 25px;
 	transform: translate(10%, -50%);
 	width: 80%;
+	height: 100%;
+	
 }
+
+
 .heading {
 	animation-name: slide;
 	animation-duration: 2s;
